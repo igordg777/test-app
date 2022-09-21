@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Подключаем views(hbs)
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join('views'));
 app.set('view engine', 'hbs');
 
 // Отображаем главную страницу с использованием шаблона "index.hbs"
